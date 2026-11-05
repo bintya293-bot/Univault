@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <title>UniVault — Eastern University</title>
+</head>
+<body>
+<header><div class="brand">Uni<span>Vault</span></div><p>YOUR CAMPUS. YOUR COURSES. YOUR KNOWLEDGE.</p></header>
+<main>
+  <section class="hero"><span class="eyebrow">EASTERN UNIVERSITY</span><h1>Study smarter,<br><em>together.</em></h1><p>Your shared library for course notes, lecture sheets and study PDFs.</p></section>
+  <section class="panel">
+    <h2>Student access</h2>
+    <input id="email" type="email" placeholder="University email">
+    <input id="password" type="password" placeholder="Password (minimum 6 characters)">
+    <div class="actions"><button id="signup">Create account</button><button class="secondary" id="login">Log in</button></div>
+    <p id="status" class="status">Connect your free Supabase project to enable accounts and cloud features.</p>
+  </section>
+  <section class="panel">
+    <div class="sectionhead"><div><span class="eyebrow">LIBRARY</span><h2>Course resources</h2></div><button class="secondary" id="refresh">Refresh</button></div>
+    <p id="libraryNote">Approved PDFs will appear here after Supabase is configured.</p>
+    <div id="library"></div>
+  </section>
+  <section class="panel">
+    <h2>Submit a PDF</h2>
+    <input id="department" placeholder="Department (e.g. CSE)">
+    <input id="semester" placeholder="Semester (e.g. 1st)">
+    <input id="course" placeholder="Course name">
+    <input id="pdf" type="file" accept="application/pdf">
+    <button id="upload">Submit for review</button>
+    <p class="status">Uploads are private until an administrator approves them.</p>
+  </section>
+</main>
+<footer>UniVault · Eastern University · Study Smarter, Together</footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="app.js"></script>
+</body></html>
